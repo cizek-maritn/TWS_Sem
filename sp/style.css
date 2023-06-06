@@ -39,8 +39,11 @@ a:link, a:visited {
 #obsah a:link, #obsah a:visited {
   color: white;
 }
-#obsah a:hover, footer a:hover, a:hover {
-  color: #e9eef0;
+header a:hover, footer a:hover {
+  color: #3e1778;
+}
+#obsah a:hover {
+  color: #c7c2c2;
 }
 nav ul {
   font-size: 24px;
