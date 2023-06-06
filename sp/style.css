@@ -337,7 +337,7 @@ fieldset {
     justify-content: center;
   }
   #gallery img {
-    width: 48%;
+    width: 30%;
     height: auto;
   }
 }
