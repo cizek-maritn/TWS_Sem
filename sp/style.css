@@ -40,7 +40,7 @@ a:link, a:visited {
   color: white;
 }
 #obsah a:hover, footer a:hover, a:hover {
-  color: #ced6d9;
+  color: #e9eef0;
 }
 nav ul {
   font-size: 24px;
@@ -105,6 +105,10 @@ fieldset {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+  }
+  header label {
+    height: 20%;
   }
   body {
     margin: 0px;
@@ -134,9 +138,6 @@ fieldset {
     padding-left: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
-  }
-  header label {
-    display: none;
   }
   h1 {
     width: 70%;
@@ -173,6 +174,9 @@ fieldset {
 @media only screen and (max-width: 1280px) and (min-width: 481px) {
   body {
     margin: 0;
+  }
+  header label {
+    display: none;
   }
   header {
     flex-wrap: wrap;
@@ -254,6 +258,9 @@ fieldset {
   body {
     margin-left: 10%;
     margin-right: 10%;
+  }
+  header label {
+    display: none;
   }
   header {
     justify-content: space-between;
