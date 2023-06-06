@@ -1,0 +1,343 @@
+html, body {
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(to bottom right, #130654, #45108f);
+  background-attachment: fixed;
+  font-family: Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+header {
+  background-color: #74aad1;
+  display: flex;
+}
+footer {
+  background-color: #74aad1;
+}
+footer h2 {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  border-bottom: 2px solid white;
+}
+footer a:link, footer a:visited {
+  color: black;
+}
+main {
+  flex:1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+#obsah a:link, #obsah a:visited {
+  color: white;
+}
+header a:hover, footer a:hover {
+  color: #3e1778;
+}
+#obsah a:hover {
+  color: #c7c2c2;
+}
+nav ul {
+  font-size: 24px;
+}
+ul {
+  list-style-type: none;
+}
+#toggle {
+  display: none;
+}
+ol {
+  counter-reset: item;
+  padding-left: 10px;
+}
+ol li {
+  display: block;
+}
+ol li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+ol li ol {
+  padding-left: 20px;
+}
+ol li a {
+  border-bottom: 2px solid white;
+}
+ol li ol li a {
+  border-bottom: none;
+}
+p {
+  width: 95%;
+}
+#drinks ul {
+  padding-left: 0px;
+}
+#drinks ul li ul {
+  padding-left: 20px;
+}
+#drinks {
+  width: 95%;
+}
+#drinks, #table, #formular {
+  margin-bottom: 5px;
+}
+table, th, td {
+  border: 2px solid white;
+  text-align: center;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+#sec1, #sec2, #sec3, #sec4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 480px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  header label {
+    display: none;
+  }
+  body {
+    margin: 0px;
+  }
+  footer {
+    text-align: center;
+  }
+  nav {
+    display: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  #toggle:checked ~ nav {
+    display: block;
+  }
+  #toggle {
+    width: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  nav ul li {
+    border-top: 2px solid white;
+  }
+  nav ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  h1 {
+    width: 70%;
+  }
+  #uvod {
+    margin-bottom: 0px;
+  }
+  iframe {
+    width: 95%;
+    height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    display: block;
+  }
+  img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #obsah {
+    display: block;
+    text-align: left;
+  }
+  #formular {
+    width: 95%;
+  }
+  #drinks {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 481px) {
+  body {
+    margin: 0;
+  }
+  header label {
+    display: none;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1 {
+    width: 90%;
+    text-align: center;
+  }
+  nav {
+    width: 90%;
+  }
+  nav ul {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  iframe {
+    width: 40%;
+    height: 45%;
+  }
+  footer h2, footer a {
+    padding-left: 10px;
+  }
+  #obsah {
+    width: 20%;
+  }
+  img {
+    width: 40%;
+    height: auto;
+    padding: 5px;
+  }
+  #sec2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #sec2 h2, #sec2 h3 {
+    width: 90%;
+    text-align: center;
+  }
+  #datamain {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #drinks {
+    width: 20%;
+  }
+  #table {
+    width: 70%;
+    padding-left: 20px;
+  }
+  table {
+    width: 95%;
+  }
+  #formular {
+    width: 50%;
+  }
+  fieldset {
+    align-items: center;
+  }
+  input[type=submit] {
+    width: 25%;
+  }
+  input {
+    width: 70%;
+  }
+  #gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #gallery img {
+    width: 45%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  header label {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    width: 70%;
+    padding-left: 10px;
+  }
+  #menu {
+    width: 150%;
+  }
+  nav ul {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #menu {
+    text-align: center;
+  }
+  iframe {
+    width: 90%;
+    height: 70%;
+  }
+  footer h2, footer a {
+    padding-left: 10px;
+  }
+  #obsah {
+    width: 20%;
+  }
+  img {
+    width: 40%;
+    height: auto;
+    padding: 5px;
+  }
+  #sec2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #sec2 h2, #sec2 h3 {
+    width: 90%;
+    text-align: center;
+  }
+  #datamain {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #drinks {
+    width: 20%;
+  }
+  #table, #formular {
+    width: 35%;
+  }
+  table {
+    width: 100%;
+  }
+  fieldset {
+    align-items: center;
+  }
+  input[type=submit] {
+    width: 25%;
+  }
+  input {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+  #gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #gallery img {
+    width: 30%;
+    height: auto;
+  }
+}
