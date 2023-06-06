@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Čížek Semestrální Práce</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+  <h1>Martin Čížek</h1>
+  <input type="checkbox" id="toggle">
+  <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
+  <nav id="menu">
+    <ul>
+      <li><a href="index.html">Úvod</a></li>
+      <li><a href="text.html">Hlavní stránka</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="gallery.html">Galerie</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="datamain">
+<section id="drinks">
+<p>Nápojové menu</p>
+<ul>
+  <li>Kávy
+    <ul>
+      <li>Cappuccino</li>
+      <li>Latte</li>
+      <li>Espresso</li>
+    </ul>
+  </li>
+  <li>Limonády
+    <ul>
+      <li>Malinovka</li>
+      <li>Kofola</li>
+      <li>Sprite</li>
+    </ul>
+  </li>
+  <li>Piva
+    <ul>
+      <li>Gambrinus</li>
+      <li>Kozel</li>
+      <li>Birell nealko</li>
+    </ul>
+  </li>
+</ul>
+</section>
+
+<section id="table">
+<table>
+<caption>Nápojový ceník</caption>
+<thead>
+  <tr>
+    <th>Nápoj</th>
+    <th>Cena</th>
+    <th>Množství</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Capuccino</td>
+    <td>60</td>
+    <td>150 ml</td>
+  </tr>
+  <tr>
+    <td>Latte</td>
+    <td>80</td>
+    <td>400 ml</td>
+  </tr>
+  <tr>
+    <td>Espresso</td>
+    <td>71</td>
+    <td>75 ml</td>
+  </tr>
+  <tr>
+    <td>Malinovka</td>
+    <td>30</td>
+    <td>300 ml</td>
+  </tr>
+  <tr>
+    <td>Kofola</td>
+    <td>50</td>
+    <td>500 ml</td>
+  </tr>
+  <tr>
+    <td>Sprite</td>
+    <td>40</td>
+    <td>300 ml</td>
+  </tr>
+  <tr>
+    <td>Gambrinus</td>
+    <td>51</td>
+    <td>500 ml</td>
+  </tr>
+  <tr>
+    <td>Kozel</td>
+    <td>68</td>
+    <td>500 ml</td>
+  </tr>
+  <tr>
+    <td>Birell nealko</td>
+    <td>43</td>
+    <td>500 ml</td>
+  </tr>
+</tbody>
+</table>
+</section>
+
+<section id="formular">
+<form>
+<fieldset>
+  <legend>Zaregistrujte se</legend>
+  <label for="fname">Jméno:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Příjmení:</label>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="mail">Email:</label>
+  <input type="email" id="mail" name="mail"><br>
+  <label for="pwd">Heslo:</label>
+  <input type="password" id="pwd" name="pwd"><br>
+  <input type="submit" value="Odeslat">
+</fieldset>
+</form>
+</section>
+</main>
+<footer>
+  <h2>Validace</h2>
+  <a href="https://validator.w3.org/">Validátor HTML</a>
+  <a href="https://validator.w3.org/checklink">Validátor odkazů</a>
+  <a href="https://jigsaw.w3.org/css-validator/">Validátor CSS</a>
+</footer>
+</body>
+</html>
